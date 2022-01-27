@@ -1,0 +1,57 @@
+<table>
+	<tr>
+		<th>Module code</th>
+		<th>Module Name</th>
+		<th>Semester</th>
+	</tr>
+	<tr>
+		<td>COMP20690</td>
+		<td>Maths</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>COMP20420</td>
+		<td>Java</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>COMP20111</td>
+		<td>NEtworking</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>COMP20222</td>
+		<td>Unix</td>
+		<td>1</td>
+	</tr>
+</table>
+
+
+
+<table>
+	<tr>
+		<th>Module code</th>
+		<th>Module Name</th>
+		<th>Semester</th>
+	</tr>
+	<tr>
+		<td>COMP20690</td>
+		<td>Maths</td>
+		<td rowspan="6">1</td>
+	</tr>
+	<tr>
+		<td>COMP20420</td>
+		<td>Java</td>
+		
+	</tr>
+	<tr>
+		<td>COMP20111</td>
+		<td>NEtworking</td>
+		
+	</tr>
+	<tr>
+		<td>COMP20222</td>
+		<td>Unix</td>
+		
+	</tr>
+</table>

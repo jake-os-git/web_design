@@ -1,0 +1,56 @@
+article{
+	border-style: solid;
+	border-width: 1px;
+}
+h1{
+	
+	font-size: 18;
+}
+p1{
+	align: center;
+}
+p2{
+	align:  left;
+}
+
+
+blockquote{
+	font-size:  larger;
+	/* box-shadow: -7, 5, 5, black; */
+
+	box-shadow: -7px 8px #888888;
+}
+.my-padding{
+	padding: 5;
+}
+tr:nth-child(odd) {
+  background-color: #66FF99;
+}
+.course-tables table th td{
+	border: 3px;
+	border-collapse: collapse;
+	text-align: center;
+}
+.small-letters{
+
+	text-transform: lowercase;
+}
+#menu{
+
+list-style-type: none;
+
+}
+a1:hover,a2:hover,a3:hover, a4:hover {
+  background-color: gold;
+}
+
+
+.column1{
+	
+	
+	float: left;
+	width: 320px;
+	padding:  5px;
+	
+
+}

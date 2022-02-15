@@ -1,0 +1,103 @@
+.column1 {
+	float: left;
+	width: 30%;
+	padding:  5px;
+	margin:  auto;
+}
+@media only screen and (max-width: 800px) {
+	.column1{
+	float: left;
+	width: 250px;
+	padding:  5px;
+	margin:  auto;
+}
+}
+ .clear{
+ 	clear: both;
+ }
+.square{
+	display: inline-block;
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  background-color: #0000FF; 
+  position: relative;
+  z-index: 2;
+}
+.images{
+	position: absolute;
+	top: 50%; left: 40%;
+	z-index: 1;
+}
+.griddy{
+	background-color: #00ff80;
+  border: 1px solid black;
+  padding: 5px;  
+}
+.griddy-container{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	background-color: black;
+ 	 padding: 4px;
+}
+.wrap {
+  margin: 50px;
+}
+.box{
+
+	display: inline-block;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  background-color: #00bfff; 
+}
+#box1{
+	transition: width 3s;
+	}
+#box2{
+	transition: transform 3s;
+}
+#box1:hover{
+	width: 400px;
+}
+#box2:active{
+	transform: rotate(360deg);
+}
+.container {
+  display: flex;
+  column-gap: 20px;
+  justify-content: space-between;
+}
+.header{
+	text-align: center;
+	color: red;
+}
+h1{
+	text-align: center;
+	color: red;
+}
+p{
+	text-align: center;
+	color: black;
+}
+.sortmeout{
+		display: inline-block;
+  width: 200px;
+  height: 200px;
+  padding: 5px;
+  
+  position: relative;
+}
+.pics{
+	transition: transform 3s;
+}
+.pics:hover{
+	transform:  rotate(360deg);
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+form{
+	float: right;
+}

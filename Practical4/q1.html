@@ -19,19 +19,7 @@
                0 20px 20px rgba(0,0,0,.15);
 			}
 		</style>
-		<script type="text/javascript">
-			
-		let companyList = document.querySelectorAll('.org');
 
-
-
-
-
-
-
-
-
-		</script>
 	</head>
 	<body>
 		<ul id="companies">
@@ -41,5 +29,24 @@
 			<li class="org">Microsoft </li>
 			<li class="org">Mozilla </li>
 		</ul>	
+		<script type="text/javascript">
+		var string = "Name: ";
+		let companyList = document.querySelectorAll('.org');
+		let index = 0;
+		while(index < companyList.length){
+			let company = string + companyList[index].textContent;
+			companyList[index].textContent = company;
+			let newStyle = document.querySelector('.org');
+			newStyle.setAttribute("class", "shadowy-text");
+			index = index + 1;
+		} 
+
+	
+
+
+	</script>
+		<script> 
+		
+		</script>
 	</body>
 </html>

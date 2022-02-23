@@ -1,31 +1,52 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
   <head>
-    <title>P4Q2</title>
-    <style>
-     #tb1{align: left;}
-     #tb2{align: center;}
-     #tb3{align: right;}
-     
-      h1{align:  center;
-         color: powderblue;}
-    </style>
-      </head>
+      <meta charset="utf-8">
+      <title>P4Q2</title>
+      <script >
+        window.onload = function(){
+        document.getElementById("b1").addEventListener("click", add);
+
+        function add(){
+          var tb1,tb2,tb3;
+          tb1 = Number(document.getElementById('tb1').value);
+          tb2 = Number(document.getElementById('tb2').value);
+          
+          sum = tb1 + tb2;
+
+          if(isNaN(sum)){
+
+            document.getElementById("form").innerHTML += "<p>Invalid input </p>";
+          }
+          else{
+            document.getElementById("tb3").setAttribute("value",sum);
+          }
+        
+        }
+     }
+     </script>
+      <style>
+         #tb1{align: left;}
+         #tb2{align: center;}
+         #tb3{align: right;}
+         
+          h1{align:  center;
+             color: powderblue;}
+     </style>
+    
+    
+  </head>
 
   <body>
     <h1 ><b>Check out these boxes</b></h1> 
-    <div> 
-      <form>
-        <input type="text" id="tb1"/>
-        <input type="text" id="tb2"/>
-        <input type="text" id="tb3"/>
-        <button type="button" id="b1">GO</button>
-      </form>
-
+    <div id = "form"> 
+      
+        Enter first number: <input  id="tb1"/>
+        Enter second number: <input  id="tb2"/>
+        <button  id="b1">GO</button>
+        <br>
+        <input id="tb3">
+    
     </div>
-
-
-
-
-</body>
+  </body>
 </html>

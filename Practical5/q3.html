@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+	<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+		<title>Q2</title>
+		
+		<link rel="preload" as = "image" href= "image1.gif" > 
+		
+		<link rel="preload" as = "image" href= "image2.gif" >
+	
+			
+
+		<style> 
+		</style>
+	</head>
+		<header>	
+		
+		
+		</header>
+
+	
+		<a href ="https://www.ucd.ie/">
+			<img id = "img1" src = "image1.gif" alt="give me a good grade pls">
+		</a>
+	<!-- 	<div>
+			<img id = "img2" src = "image2.gif">
+		</div> -->
+
+
+
+
+
+
+	<script>
+  document.getElementById("img1").addEventListener("mouseenter", swap);
+	document.getElementById("img1").addEventListener("mouseout", swapback);
+  
+
+  function swap(){
+ 	 document.getElementById("img1").src="image2.gif";
+
+  }
+  function swapback(){
+  	document.getElementById("img1").src="image1.gif";
+  }
+  
+  </script>
+
+	</html>

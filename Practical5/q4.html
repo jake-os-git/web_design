@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Q4</title>
+    <style>
+        th, td, p, input {
+            font:14px Verdana;
+        }
+        table, th, td 
+        {
+            border: solid 1px #DDD;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+        th {
+            font-weight:bold;
+        }
+    </style>
+</head>
+
+
+
+
+<body >
+
+   <p id="test" >
+   </p>
+  <table id = "colorTable">
+    <tr>
+        <th>color name</th>
+        <th>hex value  </th> 
+    </tr>
+
+   </table>
+</body>
+</html>
+<script type="text/javascript">
+
+let xhr = new XMLHttpRequest();
+// 2. GET the JSON file (must be specified)
+xhr.open('GET', "colorData.json");
+// 3. Send the request over the network
+xhr.send();
+// 4. This will be called after the response is received
+xhr.onload = function() {
+ if (xhr.status != 200) { // analyze HTTP status of the response
+ alert(`Error ${xhr.status}: ${xhr.statusText}`); // e.g. 404: Not Found
+ } else { // show the result
+ let parsedObj = JSON.parse(xhr.responseText);
+ // This function is defined below and deals with the JSON data parsed from the file.
+ put_your_code_in_this_function(parsedObj);
+ }
+};
+function put_your_code_in_this_function(parsedObj){
+ // parsedObj.name-within-JSON-for-values-you-want-to-access
+ let thing = parsedObj.the_thing_with_colours_in_it;
+ console.log(thing.length);
+ //document.getElementById("test").textContent = "hello";
+ //let myTable = document.createElement("table");
+ for (var k = 0; k < thing.length; k++) {
+     console.log(thing[k]);
+ }
+
+let table = document.getElementById("colorTable");
+
+ // for(var x = 0; x < 2; x++){
+ //    var th = document.createElement("th"); //create table header th
+ //    //var keys = Object.keys(thing);
+ //    let tr = document.createElement("tr"); // create table row tr
+ //    var keys = Object.keys(thing[x]); // get column names store 
+ //    console.log(keys);
+ //    th.textContent = keys[x];
+ //    tr.appendChild(th);
+ //    console.log(keys[x]);
+ // }
+ let i = 0;
+ while(i < thing.length){
+    console.log(thing[i].colourName);
+    let tr = document.createElement("tr");
+    let td = document.createElement("td");
+    td.textContent = thing[i].colorName;
+
+    let td2 = document.createElement("td");
+    td2.textContent = thing[i].hexValue;
+    tr.appendChild(td);
+    tr.appendChild(td2);
+    table.appendChild(tr);
+    i= i + 1;
+
+ }
+}
+//window.onload = put_your_code_in_this_function(parsedObj);
+</script>
+<html>
